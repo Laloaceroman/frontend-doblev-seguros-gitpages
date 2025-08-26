@@ -3806,88 +3806,111 @@ section.section--info .section__body .section__info .section__info__right .secti
     min-height: 250px;
   }
 }
-section.section--plans .section__body .section__comparation {
+section.section--plans .section__body .section__nocubre {
+  position: relative;
+  padding-top: 80px;
+}
+section.section--plans .section__body .section__nocubre {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.1);
+}
+section.section--plans .section__body .section__comparation,
+section.section--plans .section__body .section__nocubre {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 40px;
+  padding-left: 20px;
 }
-section.section--plans .section__body .section__comparation table {
+section.section--plans .section__body .section__comparation table,
+section.section--plans .section__body .section__nocubre table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
 }
 @media (min-width: 720px) {
-  section.section--plans .section__body .section__comparation table {
+  section.section--plans .section__body .section__comparation table,
+  section.section--plans .section__body .section__nocubre table {
     min-width: initial;
   }
 }
-section.section--plans .section__body .section__comparation table thead {
+section.section--plans .section__body .section__comparation table thead,
+section.section--plans .section__body .section__nocubre table thead {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-section.section--plans .section__body .section__comparation table tr {
+section.section--plans .section__body .section__comparation table thead tr th:last-child,
+section.section--plans .section__body .section__nocubre table thead tr th:last-child {
+  border-bottom: 0;
+  max-width: 60px;
+}
+section.section--plans .section__body .section__comparation table tr,
+section.section--plans .section__body .section__nocubre table tr {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-section.section--plans .section__body .section__comparation table tr:last-child {
+section.section--plans .section__body .section__comparation table tr:last-child,
+section.section--plans .section__body .section__nocubre table tr:last-child {
   border-bottom: 0;
 }
-section.section--plans .section__body .section__comparation table tr th {
-  font-size: 14px;
-  line-height: 22px;
-  padding: 15px 5px;
+section.section--plans .section__body .section__comparation table tr th,
+section.section--plans .section__body .section__nocubre table tr th {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 5px 5px;
   border-right: 1px solid rgba(0,0,0,0.1);
-  text-align: center;
+  text-align: left;
   min-width: 50px;
 }
 @media (min-width: 720px) {
-  section.section--plans .section__body .section__comparation table tr th {
+  section.section--plans .section__body .section__comparation table tr th,
+  section.section--plans .section__body .section__nocubre table tr th {
     min-width: 150px;
-    font-size: 18px;
-    line-height: 26px;
   }
 }
-section.section--plans .section__body .section__comparation table tr th:first-child {
+section.section--plans .section__body .section__comparation table tr th:first-child,
+section.section--plans .section__body .section__nocubre table tr th:first-child {
   text-align: left;
 }
-section.section--plans .section__body .section__comparation table tr th:last-child {
+section.section--plans .section__body .section__comparation table tr th:last-child,
+section.section--plans .section__body .section__nocubre table tr th:last-child {
   border-right: 0;
 }
-section.section--plans .section__body .section__comparation table tr td {
-  font-size: 14px;
-  line-height: 22px;
+section.section--plans .section__body .section__comparation table tr td,
+section.section--plans .section__body .section__nocubre table tr td {
+  font-size: 12px;
+  line-height: 18px;
   border-right: 1px solid rgba(0,0,0,0.1);
   font-weight: 500;
-  text-align: center;
-}
-@media (min-width: 720px) {
-  section.section--plans .section__body .section__comparation table tr td {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-section.section--plans .section__body .section__comparation table tr td:first-child {
   text-align: left;
 }
-section.section--plans .section__body .section__comparation table tr td:last-child {
+section.section--plans .section__body .section__comparation table tr td:first-child,
+section.section--plans .section__body .section__nocubre table tr td:first-child {
+  text-align: left;
+}
+section.section--plans .section__body .section__comparation table tr td:last-child,
+section.section--plans .section__body .section__nocubre table tr td:last-child {
   border-right: 0;
 }
-section.section--plans .section__body .section__comparation table tr td span {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+section.section--plans .section__body .section__comparation table tr td span,
+section.section--plans .section__body .section__nocubre table tr td span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   text-align: center;
   border-radius: 50%;
   overflow: hidden;
   background-color: #4bb175;
   color: #fff;
-  font-size: 24px;
+  font-size: 12px;
+  text-align: center;
 }
-section.section--plans .section__body .section__comparation table tr td.no span {
+section.section--plans .section__body .section__comparation table tr td.no span,
+section.section--plans .section__body .section__nocubre table tr td.no span {
   background-color: #fbf697;
   color: #180f2b;
 }
-section.section--plans .section__body .section__comparation table tr td {
-  padding: 15px 5px;
+section.section--plans .section__body .section__comparation table tr td,
+section.section--plans .section__body .section__nocubre table tr td {
+  padding: 5px 5px;
 }
 section.section--plans .section__body .section__plan {
   position: relative;
@@ -3909,7 +3932,7 @@ section.section--plans .section__body .section__plan {
 }
 @media (min-width: 720px) {
   section.section--plans .section__body .section__plan:first-child {
-    margin-right: 20px;
+    margin-bottom: 40px;
   }
 }
 section.section--plans .section__body .section__plan .section__plan__header {
@@ -3983,6 +4006,108 @@ section.section--plans .section__body .section__plan .section__plan__body .secti
 }
 section.section--plans .section__body .section__plan .section__plan__body .section__plan__table table tr td {
   padding: 10px 5px;
+}
+section.section--nocubre .section__nocubre {
+  position: relative;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+section.section--nocubre .section__comparation,
+section.section--nocubre .section__nocubre {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+section.section--nocubre .section__comparation table,
+section.section--nocubre .section__nocubre table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+@media (min-width: 720px) {
+  section.section--nocubre .section__comparation table,
+  section.section--nocubre .section__nocubre table {
+    min-width: initial;
+  }
+}
+section.section--nocubre .section__comparation table thead,
+section.section--nocubre .section__nocubre table thead {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+section.section--nocubre .section__comparation table thead tr th:last-child,
+section.section--nocubre .section__nocubre table thead tr th:last-child {
+  border-bottom: 0;
+  max-width: 60px;
+}
+section.section--nocubre .section__comparation table tr,
+section.section--nocubre .section__nocubre table tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+section.section--nocubre .section__comparation table tr:last-child,
+section.section--nocubre .section__nocubre table tr:last-child {
+  border-bottom: 0;
+}
+section.section--nocubre .section__comparation table tr th,
+section.section--nocubre .section__nocubre table tr th {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+  min-width: 50px;
+}
+@media (min-width: 720px) {
+  section.section--nocubre .section__comparation table tr th,
+  section.section--nocubre .section__nocubre table tr th {
+    min-width: 150px;
+  }
+}
+section.section--nocubre .section__comparation table tr th:first-child,
+section.section--nocubre .section__nocubre table tr th:first-child {
+  text-align: left;
+}
+section.section--nocubre .section__comparation table tr th:last-child,
+section.section--nocubre .section__nocubre table tr th:last-child {
+  border-right: 0;
+}
+section.section--nocubre .section__comparation table tr td,
+section.section--nocubre .section__nocubre table tr td {
+  font-size: 14px;
+  line-height: 18px;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  font-weight: 500;
+  text-align: left;
+}
+section.section--nocubre .section__comparation table tr td:first-child,
+section.section--nocubre .section__nocubre table tr td:first-child {
+  text-align: left;
+}
+section.section--nocubre .section__comparation table tr td:last-child,
+section.section--nocubre .section__nocubre table tr td:last-child {
+  border-right: 0;
+}
+section.section--nocubre .section__comparation table tr td span,
+section.section--nocubre .section__nocubre table tr td span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #4bb175;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+section.section--nocubre .section__comparation table tr td.no span,
+section.section--nocubre .section__nocubre table tr td.no span {
+  background-color: #fbf697;
+  color: #180f2b;
+}
+section.section--nocubre .section__comparation table tr td,
+section.section--nocubre .section__nocubre table tr td {
+  padding: 10px;
 }
 @font-face {
   font-family: 'swiper-icons';
