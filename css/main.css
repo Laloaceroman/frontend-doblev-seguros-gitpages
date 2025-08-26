@@ -1688,7 +1688,7 @@ article.article--feature .article__body p {
   float: left;
   position: relative;
   top: 2px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .btn:hover {
   background-color: #fff;
@@ -3099,8 +3099,8 @@ header.header--static .header__logo.header__logo--white {
 }
 .modal .modal__close {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
   color: #e73759;
   opacity: 1;
   font-weight: bold;
@@ -3161,6 +3161,102 @@ header.header--static .header__logo.header__logo--white {
     -ms-flex-align: center;
         align-items: center;
   }
+}
+.modal.modal--info .modal__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 80px 0px;
+}
+.modal.modal--info .modal__front .modal__box {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: auto;
+}
+.modal.modal--info .modal__box {
+  width: 100%;
+  max-width: 800px;
+}
+.modal.modal--info .modal__title {
+  margin-bottom: 40px;
+}
+.modal.modal--info .modal__content table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+@media (min-width: 720px) {
+  .modal.modal--info .modal__content table {
+    min-width: initial;
+  }
+}
+.modal.modal--info .modal__content table thead {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.modal.modal--info .modal__content table thead tr th:last-child {
+  border-bottom: 0;
+  max-width: 60px;
+}
+.modal.modal--info .modal__content table tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.modal.modal--info .modal__content table tr:last-child {
+  border-bottom: 0;
+}
+.modal.modal--info .modal__content table tr th {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+  min-width: 50px;
+}
+@media (min-width: 720px) {
+  .modal.modal--info .modal__content table tr th {
+    min-width: 150px;
+  }
+}
+.modal.modal--info .modal__content table tr th:first-child {
+  text-align: left;
+}
+.modal.modal--info .modal__content table tr th:last-child {
+  border-right: 0;
+}
+.modal.modal--info .modal__content table tr td {
+  font-size: 14px;
+  line-height: 18px;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  font-weight: 500;
+  text-align: left;
+}
+.modal.modal--info .modal__content table tr td:first-child {
+  text-align: left;
+}
+.modal.modal--info .modal__content table tr td:last-child {
+  border-right: 0;
+}
+.modal.modal--info .modal__content table tr td span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #4bb175;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.modal.modal--info .modal__content table tr td.no span {
+  background-color: #fbf697;
+  color: #180f2b;
+}
+.modal.modal--info .modal__content table tr td {
+  padding: 10px;
 }
 section {
   position: relative;
@@ -3806,6 +3902,10 @@ section.section--info .section__body .section__info .section__info__right .secti
     min-height: 250px;
   }
 }
+section.section--plans .section__body .section__button {
+  text-align: center;
+  margin-top: 40px;
+}
 section.section--plans .section__body .section__nocubre {
   position: relative;
   padding-top: 80px;
@@ -3818,15 +3918,23 @@ section.section--plans .section__body .section__nocubre {
 section.section--plans .section__body .section__comparation,
 section.section--plans .section__body .section__nocubre {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-left: 20px;
+  overflow-x: scroll;
+}
+@media (min-width: 720px) {
+  section.section--plans .section__body .section__comparation,
+  section.section--plans .section__body .section__nocubre {
+    overflow-x: initial;
+  }
 }
 section.section--plans .section__body .section__comparation table,
 section.section--plans .section__body .section__nocubre table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
+  overflow-x: scroll;
+  min-width: 700px;
 }
 @media (min-width: 720px) {
   section.section--plans .section__body .section__comparation table,
@@ -3853,9 +3961,9 @@ section.section--plans .section__body .section__nocubre table tr:last-child {
 }
 section.section--plans .section__body .section__comparation table tr th,
 section.section--plans .section__body .section__nocubre table tr th {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
-  padding: 5px 5px;
+  padding: 10px;
   border-right: 1px solid rgba(0,0,0,0.1);
   text-align: left;
   min-width: 50px;
@@ -3876,7 +3984,7 @@ section.section--plans .section__body .section__nocubre table tr th:last-child {
 }
 section.section--plans .section__body .section__comparation table tr td,
 section.section--plans .section__body .section__nocubre table tr td {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   border-right: 1px solid rgba(0,0,0,0.1);
   font-weight: 500;
@@ -3900,7 +4008,7 @@ section.section--plans .section__body .section__nocubre table tr td span {
   overflow: hidden;
   background-color: #4bb175;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 section.section--plans .section__body .section__comparation table tr td.no span,
@@ -3910,7 +4018,7 @@ section.section--plans .section__body .section__nocubre table tr td.no span {
 }
 section.section--plans .section__body .section__comparation table tr td,
 section.section--plans .section__body .section__nocubre table tr td {
-  padding: 5px 5px;
+  padding: 10px;
 }
 section.section--plans .section__body .section__plan {
   position: relative;
@@ -3964,6 +4072,11 @@ section.section--plans .section__body .section__plan .section__plan__header p {
 section.section--plans .section__body .section__plan .section__plan__body .section__plan__table {
   width: 100%;
   overflow-x: scroll;
+}
+@media (min-width: 720px) {
+  section.section--plans .section__body .section__plan .section__plan__body .section__plan__table {
+    overflow-x: initial;
+  }
 }
 section.section--plans .section__body .section__plan .section__plan__body .section__plan__table table {
   width: 100%;

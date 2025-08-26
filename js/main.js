@@ -328,11 +328,9 @@ app.loader = {
 
 app.modal = {
   init: function() {
-    $("[data-modal-login]").click(function(e) {
+    $("[data-modal-info]").click(function(e) {
       e.preventDefault();
-      app.modal.open(".modal--login");
-      $(".modal--resetpass").removeClass("modal--in");
-      return $(".modal--register").removeClass("modal--in");
+      return app.modal.open(".modal--info");
     });
     $(".modal__close").click(function() {
       return app.modal.close($(this).closest(".modal"));
